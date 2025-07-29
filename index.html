@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEYYY Sweetu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Outfit:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #fef2f8, #e0f2fe);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: #fff0f6;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #ec4899;
+      margin-bottom: 0.5rem;
+      animation: popIn 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.6); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .video-wrapper video {
+      width: auto;
+      height: 80vh;
+      max-height: 90vh;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .notes {
+      margin-top: 3rem;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 3s ease-in;
+    }
+
+    .notes h2 {
+      color: #9333ea;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .notes p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .flower-btn {
+      display: block;
+      margin: 3rem auto 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #f472b6;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .flower-btn:hover {
+      transform: scale(1.05);
+      background-color: #ec4899;
+    }
+
+    .flower-box {
+      text-align: center;
+      margin-top: 2rem;
+      display: none;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .flower-box img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 1rem;
+      animation: floatUp 1s ease-in-out;
+    }
+
+    .flower-box p {
+      font-size: 1.1rem;
+      color: #be185d;
+      font-weight: 500;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ik your mood is off so i hope this helps!</h1>
+    <p>did not have that much time to make an new edit so just watch my fav one its an reminder to you to stay happy like that!</p>
+  </header>
+  
+
+  <section class="section video-wrapper">
+    <video src="cutu.mp4" controls></video>
+  </section>
+
+  <section class="section notes">
+    <h2>something you need to hear 📝</h2>
+    <p>
+      hey. idk why ur mood is off.. but listen you are one of the most kindest person i've ever met.  dont thik that you are unlovable! you are not maybe you are asking the love from the wrong person. if its about your parents so just know they love you no matter what you think. YOU are not unlovable you will recive the love you deserve. Never forget how loved and special you are. You are very special to me and btw im sorry about my actions.
+    </p>
+  </section>
+
+  <button class="flower-btn" onclick="showFlower()">Press the button if you forgive me</button>
+
+  <div class="flower-box" id="flowerBox">
+    <img src="flowers.jpg" alt="Flower">
+    <p>Flowersss for you! 🌷 thanks and im always greatful to be your friend. YOU ARE THE BEST</p>
+  </div>
+
+  <footer>
+    HOPE I MADE UR MOOD BETTER
+  </footer>
+
+  <script>
+    function showFlower() {
+      const flowerBox = document.getElementById('flowerBox');
+      flowerBox.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
